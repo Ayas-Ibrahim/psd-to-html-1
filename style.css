@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: open sans;
+}
+h1 h2 h3{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.continer{
+    width: 1280px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* nav bar */
+nav{
+    background-color:green ;
+}
+nav .continer .row{
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .row ul li{
+    display: inline-block;
+}
+nav .row ul li a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 25px 25px;
+    display: inline-block;
+}
+/* nav bar */
+#bannar{
+    background-image: url(./img/bannar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+}
+#bannar .row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+}
+#bannar .row h3{
+    font-size: 30px;
+    color: #ffffff;
+}
+#bannar .row h1{
+    font-size: 68px;
+    color: #ffffff;
+    letter-spacing: 15px;
+}
+#bannar .row p{
+    font-size: 18px;
+    color:#ffffff;
+}
+#bannar .row .but {
+    position: relative;
+}
+
+#bannar .row .but img{
+    display: block;
+    padding: 51px 0px 51px 0px;
+    
+}
+#bannar .row  .know{
+   
+    left: 50;
+    font-size:14px;
+    font-weight: 800;
+    color: #0b1016;
+    padding: 20px 42px;
+    letter-spacing: 3px;
+    background-color: #cfc91d;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+#bannar .row  .know::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    bottom:0;
+    left: 0;
+    transition: width 1s;
+}
+#bannar .row  .know:hover::after{
+    width: 100%;
+}
+
+
+
+
+
